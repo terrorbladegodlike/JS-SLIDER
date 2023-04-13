@@ -1,0 +1,182 @@
+body {
+    background-color: #131313;
+}
+
+.slider {
+    width: 670px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider_buttons-container {
+    width: 670px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-button {
+    max-width: 350px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.3);
+    border: none;
+    transform: none;
+    transition-duration: .3s;
+    cursor: pointer;
+    background: transparent;
+}
+
+.slider-button:hover {
+    color: #E3B873;
+}
+
+.slider-image {
+    width: 670px;
+    height: 480px;
+    width: 100%;
+    border-radius: 2%;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-image: url("images/parrots0.jpg");
+    background-size: cover;
+    transition: all .3s ease-in-out;
+}
+
+.slider-image__selected {
+    color: #E3B873; 
+    border-bottom: 1px solid #E3B873;
+}
+
+.slider_arrows-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+#left-arrow, #right-arrow,
+#left-arrow-button,
+#right-arrow-button {
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    z-index: -1;
+    position: relative;
+}
+
+.dot {
+    margin: 0 18px 0 18px;
+    width: 10px;
+    transition-duration: .3s;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #131313;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-arrow-button,
+#right-arrow-button {
+    z-index: 0;
+    cursor: pointer;
+}
+
+#right-arrow {
+    rotate: 180deg;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1550px;
+}
+
+.project {
+    background: #131313;
+    color: #FFF;
+    display: flex;
+    padding: 50px 0;
+ }
+ 
+ .project__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ 
+ .project__content {
+    max-width: 442px;
+    margin-right: 50px;
+ }
+ 
+ .project__title {
+    font-family: 'Yeseva One';
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    max-width: 253px;
+    margin-bottom: 34px;
+ }
+ 
+ .project__text {
+    font-size: 14px;
+    line-height: 27px;
+    margin-bottom: 42px;
+ }
+ 
+ .project__info {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ .project__item {
+    width: 50%;
+    margin-bottom: 34px;
+ }
+ 
+ .project__item-title {
+    font-size: 18px;
+    line-height: 25px;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+ }
+ 
+ .project__item-subtitle {
+    max-width: 115px;
+    font-size: 13px;
+    line-height: 21px;
+ }
+ 
+ .project__nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+ }
+ 
+ .project__nav-item {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-right: 60px;
+    padding-bottom: 6px;
+ 
+    transition: color .2s linear;
+ }
+ 
+ .project__nav-item:last-child{
+    margin-right: 0;
+ }
